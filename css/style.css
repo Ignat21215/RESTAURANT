@@ -1,16 +1,18 @@
 :root {
-    --color:rgba(245, 239, 219, 1);
-    --color:rgba(220, 202, 135, 1);
-    --color:rgba(170, 170, 170, 1);
-    --color:rgba(255, 255, 255, 1);
-    --color:rgba(250, 250, 250, 1);
-    --color:rgba(12, 12, 12, 1);
-    --color:rgba(220, 202, 135, 0.2);
-    --color:rgba(4, 4, 4, 1);
-    --color:rgba(171, 171, 171, 1);
-    --color:rgba(171, 171, 171, 1);
-    --color:rgba(39, 39, 39, 1);
-    --color:rgba(220, 202, 135, 1);
-    --color:rgba(245, 239, 219, 1);
-    --color:rgba(250, 250, 250, 1);
+    --font-family: "Cormorant Upright", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+    --third-family: "Bestermind", sans-serif;
+    --header-txt: rgba(255, 255, 255, 1);
+    --main-gold-txt: rgba(220, 202, 135, 1);
+    --view-btn-txt: rgba(12, 12, 12, 1);
+    --main-desc: rgba(170, 170, 170, 1);
+    --main-bg: rgba(4, 4, 4, 1);
+    --gallery-gradient: rgba(0, 0, 0, 0.25);
+    --gallery-img-border: rgba(220, 202, 135, 0.2);
+    --subscribe-input-border: rgba(245, 239, 219, 1);
+    --menu-line: rgba(250, 250, 250, 1);
+    --scroll-gradient-second: rgba(220, 202, 135, 0.24);
+    --header-line-gradient: rgba(255, 255, 255, 0);
+    --gallery-gradient-first: rgba(0, 0, 0, 0.75);
+    --gallery-gradient-sercond: rgba(0, 0, 0, 0.64);
 }
