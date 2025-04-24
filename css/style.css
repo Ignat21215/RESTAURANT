@@ -90,7 +90,7 @@ body {
     background-image:  linear-gradient(
         to right,
         rgba(4, 4, 4, 0.5),
-        rgba(4, 4, 4, 1, 0.5)
+        rgba(4, 4, 4, 0.5)
     ),
     url(../images/first-page/icons/white-g.jpg),
     url(../images/first-page/backgrounds/about_us-bg.jpg);
