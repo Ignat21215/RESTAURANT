@@ -35,7 +35,10 @@ body {
 }
 
 .hero {
-    background-image: url(../images/second-page/backgrounds/background-image.jpg);
+    background: linear-gradient(to right,
+                rgba(4, 4, 4, 0.5),
+                rgba(4, 4, 4, 0.5)),
+                url(../images/second-page/backgrounds/background-image.jpg);
     padding-bottom: 138px;
 }
 
@@ -54,7 +57,10 @@ body {
 }
 
 .about {
-    background-image: url(../images/second-page/backgrounds/background-image.jpg);
+    background: linear-gradient(to right,
+                rgba(4, 4, 4, 0.5),
+                rgba(4, 4, 4, 0.5)),
+                url(../images/second-page/backgrounds/background-image.jpg);
     padding-top: 128px;
     padding-bottom: 128px;
 }
