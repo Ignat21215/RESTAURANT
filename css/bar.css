@@ -1,0 +1,288 @@
+:root {
+    --font-family: "Cormorant Upright", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+    --third-family: "Bestermind", sans-serif;
+    --header-txt: rgba(255, 255, 255, 1);
+    --main-gold-txt: rgba(220, 202, 135, 1);
+    --view-btn-txt: rgba(12, 12, 12, 1);
+    --main-desc: rgba(170, 170, 170, 1);
+    --main-bg: rgba(4, 4, 4, 1);
+    --gallery-gradient: rgba(0, 0, 0, 0.25);
+    --gallery-img-border: rgba(220, 202, 135, 0.2);
+    --subscribe-input-border: rgba(245, 239, 219, 1);
+    --menu-line: rgba(250, 250, 250, 1);
+    --scroll-gradient-second: rgba(220, 202, 135, 0.24);
+    --header-line-gradient: rgba(255, 255, 255, 0);
+    --gallery-gradient-first: rgba(0, 0, 0, 0.75);
+    --gallery-gradient-sercond: rgba(0, 0, 0, 0.64);
+    --hero-btn-txt: rgba(12, 11, 8, 1);
+    --letter-spacing-second: 0.03;
+    --line-height-smaller: 1.35;
+    --line-height-third: 1.3;
+    --letter-spacing-third: 0.05;
+}
+
+body {
+    line-height: 1.75;
+    letter-spacing: 0.04;
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+}
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(to right,
+                rgba(4, 4, 4, 0.5),
+                rgba(4, 4, 4, 0.5)),
+                url(../images/second-page/backgrounds/background-image.jpg);
+    padding-bottom: 138px;
+}
+
+.hero-container {
+    background: url(../images/second-page/photos/bar.jpg) center / 634px 840px no-repeat;
+    padding-top: 319px;
+    padding-bottom: 286px;
+}
+
+.hero-title {
+    color: var(--header-txt);
+    line-height: var(--line-height-third);
+    letter-spacing: var(--letter-spacing-third);
+    font-size: 181px;
+    text-align: center;
+}
+
+.about {
+    background: linear-gradient(to right,
+                rgba(4, 4, 4, 0.5),
+                rgba(4, 4, 4, 0.5)),
+                url(../images/second-page/backgrounds/background-image.jpg);
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.about-container {
+    display: flex; 
+    gap: 143px;
+    justify-content: center;
+}
+
+.about-img {
+    padding-top: 136px;
+}
+
+.about-wrapper-img {
+    padding-bottom: 40px;
+}
+
+.about-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: var(--line-height-third);
+    color: var(--header-txt);
+}
+
+.about-subtitle::after {
+    content: '';
+    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 40px;
+    height: 9px;
+}
+
+.about-title {
+    color: var(--main-gold-txt);
+    font-size: 64px;
+    line-height: var(--line-height-third);
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-second);
+    width: 614px;
+    text-transform: capitalize;
+    padding-bottom: 32px;
+}
+
+.about-desc {
+    color: var(--main-desc);
+    font-size: 16px;
+    width: 523px;
+    font-family: var(--second-family);
+    padding-bottom: 32px;
+}
+
+.about-btn {
+    background-color: var(--main-gold-txt);
+    padding: 8px 32px;
+    color: var(--view-btn-txt);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.poison {
+    padding-top: 201px;
+    padding-bottom: 152px;
+    text-align: center;
+}
+
+.poison-subtitle {
+    color: var(--header-txt);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: var(--line-height-third);
+}
+
+.poison-subtitle::after {
+    content: '';
+    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 9px;
+}
+
+.poison-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--main-gold-txt);
+    line-height: var(--line-height-third);
+    padding-bottom: 64px;
+}
+
+.poison-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+.poison-item {
+    border: 1px solid;
+    border-color: rgba(220, 202, 135, 0.505);
+}
+
+.poison-item-desc {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: var(--line-height-third);
+    color: var(--header-txt);
+}
+
+.first-item {
+    background-image: url(../images/second-page/photos/beer.jpg);
+    padding: 284px 175px 258px 153px;
+}
+
+.second-item {
+    background-image: url(../images/second-page/photos/wine.jpg);
+    padding: 284px 187px 258px 158px;
+}
+
+.third-item {
+    background-image: url(../images/second-page/photos/alcohol.jpg);
+    padding: 271px 119px 271px 120px;
+}
+
+.hours {
+    background:
+            linear-gradient(to left, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)),
+            url(../images/second-page/photos/martini.jpg) center / cover no-repeat;
+    padding-top: 330px;
+    padding-bottom: 330px;
+    text-align: center;
+}
+
+.hours-title {
+    font-size: 128px; 
+    letter-spacing: var(--letter-spacing-second);
+    line-height: var(--line-height-third);
+    font-weight: 600;
+    padding-bottom: 32px;
+    color: var(--main-gold-txt);
+}
+
+.hours-desc {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: var(--line-height-third);
+    color: var(--header-txt);
+}
+
+.find {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background: linear-gradient(to right,
+    rgba(4, 4, 4, 0.5),
+    rgba(4, 4, 4, 0.5)),
+    url(../images/second-page/backgrounds/background-image.jpg);
+}
+
+.find-container {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--header-txt);
+    line-height: var(--line-height-third);
+}
+
+.find-subtitle::after {
+    content: '';
+    display: block;
+    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 9px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.find-title {
+    color: var(--main-gold-txt);
+    font-weight: 600;
+    line-height: var(--line-height-third);
+    font-size: 64px;
+    padding-bottom: 64px;
+}
+
+.find-desc {
+    font-family: var(--second-family);
+    color: var(--main-desc);
+    font-size: 16px;
+    padding-bottom: 32px;
+}
+
+.find-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 64px;
+}
+
+.find-item-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: var(--line-height-third);
+    color: var(--main-gold-txt);
+}
+
+.find-item-desc {
+    color: var(--header-txt);
+    font-family: var(--second-family);
+    font-size: 16px;
+}
