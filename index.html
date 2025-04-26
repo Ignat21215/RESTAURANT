@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- git push origin feature/maksym -->
     <title>Gericht</title>
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
@@ -39,16 +40,14 @@
                     <a href="" class="header-link">Landing</a>
                 </li>
             </ul>
-            <nav>
-                <ul>
-                    <li>
-
-                    </li>
-                    <li>
-                        
-                    </li>
-                </ul>
-            </nav>
+            <ul class="header-roster"> 
+                <li class="header-element">
+                  <a href="" class="header-reference">Login in / Registration</a>
+                </li>
+                <li class="header-element">
+                  <a href="" class="header-reference">Book Table</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -84,6 +83,9 @@
               <button type="button" class="about-item-btn">Know More</button>
             </li>
             <li class="about-item">
+              <img src="./images/first-page/icons/knife.jpg" alt="Knife" class="about-img">
+            </li>
+            <li class="about-item">
               <h2 class="about-item-title">Our History</h2>
               <p class="about-item-desc">
                 Adipiscing tempus ullamcorper lobortis odio tellus arcu
@@ -111,10 +113,10 @@
         </div>
       </section>
       <section class="believe">
-        <div class="container">
+        <div class="container believe-container">
             <article class="believe-article">
-                <img src="" alt="Chef" class="">
-                <div>
+                <img src="./images/first-page/photos/chef.jpg" alt="Chef" class="">
+                <div class="believe-wrapper">
                     <p class="believe-subtitle">Chef's Word</p>
                     <h2 class="believe-title">What We Believe In</h2>
                     <p class="believe-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
@@ -131,30 +133,57 @@
             <h2 class="customers-title">Happpy Customers</h2>
             <ul class="customers-list">
                 <li class="customers-item">
-                    <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                    <p class="customers-name">Wade Warren</p>
-                    <p class="customers-job">Sommelier</p>
+                    <img src="./images/first-page/photos/customer1.jpg" alt="first-customer" class="customers-img">
+                    <div class="customers-wrapper">
+                        <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <p class="customers-name">Wade Warren</p>
+                        <p class="customers-job">Sommelier</p>
+                    </div>
                 </li>
                 <li class="customers-item">
-                    <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                    <p class="customers-name">Jane Cooper</p>
-                    <p class="customers-job">Chef</p>
+                    <img src="./images/first-page/photos/customer2.jpg" alt="second-customer" class="customers-img">\
+                    <div class="customers-wrapper">
+                        <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <p class="customers-name">Jane Cooper</p>
+                        <p class="customers-job">Chef</p>
+                    </div>
                 </li>
                 <li class="customers-item">
-                    <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                    <p class="customers-name">Robert Fox</p>
-                    <p class="customers-job">Chef</p>
+                    <img src="./images/first-page/photos/customer3.jpg" alt="third-customer" class="customers-img">
+                    <div class="customers-wrapper">
+                        <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <p class="customers-name">Robert Fox</p>
+                        <p class="customers-job">Chef</p>
+                    </div>
                 </li>
                 <li class="customers-item">
-                    <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                    <p class="customers-name">Brooklyn Simmons</p>
-                    <p class="customers-job">Caterer</p>
+                    <img src="./images/first-page/photos/customer4.jpg" alt="fourth-customer" class="customers-img">
+                    <div class="customers-wrapper">
+                        <p class="customers-text">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <p class="customers-name">Brooklyn Simmons</p>
+                        <p class="customers-job">Caterer</p>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
     </main>
     <footer class="footer">
+      <section class="newsletter">
+        <div class="newsletter-container">
+          <p class="newsletter-subtitle">Newsletter</p>
+          <h2 class="newsletter-title">Subscribe To Our Newsletter</h2>
+          <p class="newsletter-text">And never miss last Updates!</p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Email Address"
+            />
+            <button class="newsletter-button">Subscribe</button>
+          </form>
+        </div>
+      </section>
       <div class="container footer-container">
         <div class="footer-wrapper">
           <adress class="footer-adress">
@@ -225,4 +254,3 @@
     </footer>
   </body>
 </html>
->>>>>>> 051f89c2d2b7ef73185b1a42baddba1bac2d7bd3

@@ -24,7 +24,7 @@ body {
     line-height: 1.75;
     letter-spacing: 0.04;
     font-family: var(--font-family);
-    background-color: var(--main-bg);
+    background-color: var(--hero-btn-txt);
 }
 
 .container {
@@ -32,9 +32,96 @@ body {
     margin: 0 auto;
 }
 
+
+/* PADDING */
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: black;
+}
+
+.believe {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(./images/first-page/backgrounds/about_us-bg.jpg)
+}
+
+.customers {
+    padding-top: 152px;
+    padding-bottom: 152px;
+    background-color: black
+}
+
 .hero {
     padding-bottom: 267px;
+    padding-top: 48px;
 }
+
+
+/* HEADER */
+
+.header-link {
+    color: var(--header-txt);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75px;
+    letter-spacing: 4%;
+    font-family: var(--second-family);
+}
+
+.header-reference {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 5%;
+    text-decoration: none;
+    color: var(--header-txt);
+}
+
+.header-logo {
+    color: var(--header-txt);
+    text-decoration: none;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3px;
+    letter-spacing: 4%;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 32px;
+    padding-left: 437px;
+    padding-right: 271px;
+}
+
+
+.header-roster {
+    display: flex;
+}
+
+.header-element:nth-child(1) {
+    padding-right: 50px;
+    border-right: 1px solid ;
+}
+
+.header-element:nth-child(2) {
+    padding-left: 50px;
+    border-right: 1px solid ;
+}
+
+
+/* HERO */
 
 .hero-container {
     display: flex;
@@ -98,11 +185,13 @@ body {
     background-repeat: no-repeat;
 }
 
+
 .about-list {
     display: flex;
     justify-content: center;
     padding-top: 120px;
     padding-bottom: 136px;
+    align-items: center;
 }
 
 .about-item {
@@ -117,7 +206,7 @@ body {
     content: '';
     margin-left: 74px;
     margin-right: 96px;
-    background-image: url(../images/first-page/icons/knife.jpg);
+    background-image: url(./images/first-page/icons/knife.jpg);
     background-repeat: no-repeat;
 }
 
@@ -162,6 +251,22 @@ body {
     font-weight: 700;
 }
 
+.about-item:nth-child(1) {
+    padding-right: 74px;   
+}
+
+
+.about-item:nth-child(3) {
+    padding-left: 96px;
+}
+
+.about-img {
+    height: 703px;
+    width: 84px;
+}
+
+/* MENU */
+
 .menu {
     background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
     padding-top: 261px;
@@ -186,6 +291,180 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--menu-line);
 }
+
+/* BELIEVE */
+
+.believe {
+    background-image: url("../images/first-page/backgrounds/about_us-bg.jpg");
+}
+
+.believe-subtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 4%;
+    color: var(--header-txt);
+    padding-bottom: 8px;
+}
+
+.believe-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: left;
+}
+
+.believe-title {
+    font-family:var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: 3%;
+    color: var(--main-gold-txt);
+    padding-bottom: 64px;
+    letter-spacing: 1.3px;
+}
+
+.believe-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: var(--main-desc);
+    padding-bottom: 64px;
+}
+
+.believe-text::before {
+    content:"";
+    background-image: url(../images/first-page/icons/quote.jpg);
+    display: block;
+    background-size: 40px;
+    width: 47px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.believe-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 4%;
+    padding-bottom: 8px;
+    color: var(--main-gold-txt);
+}
+
+.believe-signature {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 4%;
+    color: var(--main-desc);
+}
+.believe-article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+    justify-content: center;
+}
+
+.believe-wrapper {
+    width: 570px;
+    height: 615px;
+}
+
+.believe-job {
+    color: var(--main-desc);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    font-family: var(--second-family);
+    padding-bottom: 64px;
+}
+
+/* CUSTOMERS */
+
+.customers {
+    background-color: var(--hero-btn-txt);
+}
+
+.customers-title {
+    text-align: center;
+    font-weight: 600px;
+    font-size: 64px;
+    letter-spacing: 3%;
+    color: var(--main-gold-txt);
+    padding-bottom: 64px;
+    padding-top: 8px;
+    letter-spacing: 1.3px;
+}
+
+.customers-subtitle {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700px;
+    font-size: 23px;
+    letter-spacing: 4%;
+    color:var(--header-txt);
+    padding-bottom: 8px;
+    letter-spacing: 1.3px;
+}
+
+.customers-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position:center ;
+}
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.customers-item {
+    display: flex;
+}
+
+
+.customers-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: var(--main-desc);
+}
+
+.customers-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 4%;
+    color: var(--main-gold-txt);
+}
+
+.customers-job {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: var(--subscribe-input-border);
+}
+
+.customers-img {
+    margin-right: 34px;
+}
+
+.customers-wrapper {
+    width: 412px;
+}
+
 /* Footer start */
 
 .footer {
@@ -194,4 +473,80 @@ body {
             rgba(4, 4, 4, 0.5)),
         url(../images/second-page/backgrounds/background-image.jpg);
     padding-bottom: 138px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    height: 500px;
+    padding: 80px 180px;
+}
+.newsletter-container {
+    background-color: #0c0c0c;
+    border: 1px solid #DCCA87;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newsletter-title{
+    color: #DCCA87;
+    font-size: 64px;
+    font-family: var(--font-family);
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: 1.3px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.newsletter-subtitle {
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 23px;
+    letter-spacing: 4%;
+    color: var(--header-txt);
+    padding-bottom: 8px;
+}
+
+.newsletter-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position:center ;
+}
+
+.newsletter-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    color: var(--header-txt);
+}
+
+
+.newsletter-input {
+    padding: 16px 519px 16px 19px;
+    font-weight:600;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    background-color: var(--view-btn-txt);
+    color: var(--main-desc);
+    border: 1px solid var(--subscribe-input-border);
+}
+
+.newsletter-button {
+    font-family: var(--font-family);
+    padding: 8px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+    color: var(--view-btn-txt);
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
 }
