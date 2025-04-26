@@ -114,7 +114,7 @@
 }
 
 .believe-text::before {
-    content: ;
+    content:"";
 }
 
 .believe-name {
