@@ -417,3 +417,142 @@ body {
     align-items: center;
     justify-content: center;
 }
+.newsletter {
+    height: 500px;
+    padding: 80px 180px;
+}
+
+.newsletter-container {
+    background-color: #0c0c0c;
+    border: 1px solid #DCCA87;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newsletter-title {
+    color: #DCCA87;
+    font-size: 64px;
+    font-family: var(--font-family);
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: 1.3px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.newsletter-subtitle {
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 23px;
+    letter-spacing: 4%;
+    color: var(--header-txt);
+    padding-bottom: 8px;
+}
+
+.newsletter-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: center;
+}
+
+.newsletter-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    color: var(--header-txt);
+    line-height: 175%;
+}
+
+
+.newsletter-input {
+    padding: 16px 519px 16px 19px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    background-color: var(--view-btn-txt);
+    color: var(--main-desc);
+    border: 1px solid var(--subscribe-input-border);
+}
+
+.newsletter-button {
+    font-family: var(--font-family);
+    padding: 8px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+    color: var(--view-btn-txt);
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
+}
+.table-container {
+    background-color: #0c0c0c;
+    border: 1px solid #DCCA87;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.table-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    font-family: var(--font-family);
+    color: var(--header-txt);
+    padding-bottom: 8px;
+}
+
+.table-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: center;
+}
+
+.table-title {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--main-gold-txt);
+    padding-bottom: 64px;
+}
+
+.table-select {
+    padding: 16px 316px 16px 16px;
+    background-color: #0c0c0c;
+    border: 1px solid var(--subscribe-input-border);
+    color: var(--main-desc);
+    font-weight: 600;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 4%;
+}
+
+.table-form {
+    display: flex;
+    gap: 32px;
+    padding-bottom: 64px;
+}
+
+.table-button {
+    padding: 8px 32px;
+    color: var(--view-btn-txt);
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 4%;
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
+}
