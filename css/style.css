@@ -25,7 +25,15 @@ body {
     letter-spacing: 0.04;
     font-family: var(--font-family);
     background-color: var(--main-bg);
+    background-image:
+        linear-gradient(to right,
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(/RESTAURANT/images/first-page/backgrounds/wave-element.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
 }
+
 
 .container {
     width: 1680px;
