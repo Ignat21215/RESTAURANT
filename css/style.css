@@ -1,0 +1,197 @@
+:root {
+    --font-family: "Cormorant Upright", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+    --third-family: "Bestermind", sans-serif;
+    --header-txt: rgba(255, 255, 255, 1);
+    --main-gold-txt: rgba(220, 202, 135, 1);
+    --view-btn-txt: rgba(12, 12, 12, 1);
+    --main-desc: rgba(170, 170, 170, 1);
+    --main-bg: rgba(4, 4, 4, 1);
+    --gallery-gradient: rgba(0, 0, 0, 0.25);
+    --gallery-img-border: rgba(220, 202, 135, 0.2);
+    --subscribe-input-border: rgba(245, 239, 219, 1);
+    --menu-line: rgba(250, 250, 250, 1);
+    --scroll-gradient-second: rgba(220, 202, 135, 0.24);
+    --header-line-gradient: rgba(255, 255, 255, 0);
+    --gallery-gradient-first: rgba(0, 0, 0, 0.75);
+    --gallery-gradient-sercond: rgba(0, 0, 0, 0.64);
+    --hero-btn-txt: rgba(12, 11, 8, 1);
+    --letter-spacing-second: 0.03;
+    --line-height-smaller: 1.35;
+}
+
+body {
+    line-height: 1.75;
+    letter-spacing: 0.04;
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+}
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding-bottom: 267px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    justify-content: center;
+}
+
+.hero-wrapper {
+    width: 453px;
+}
+
+.hero-subtitle {
+    color: var(--header-txt);
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.hero-subtitle::after {
+    content: '';
+    background-image: url('../images/first-page/icons/right-spoon.jpg');
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+}
+
+.hero-title {
+    font-size: 90px;
+    color: var(--main-gold-txt);
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: var(--main-desc);
+    font-family: var(--second-family);
+    margin: 32px 0px;
+}
+
+.hero-btn {
+    background-color: var(--main-gold-txt);
+    color: var(--hero-btn-txt);
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+/* ТУТ НЕ ЗАВЕРШЕНО */
+
+.about {
+    background-image:  linear-gradient(
+        to right,
+        rgba(4, 4, 4, 0.5),
+        rgba(4, 4, 4, 0.5)
+    ),
+    url(../images/first-page/icons/white-g.jpg),
+    url(../images/first-page/backgrounds/about_us-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 136px;
+}
+
+.about-item {
+    text-align: left;
+}
+
+.about-item-first {
+    text-align: right;
+}
+
+.about-item-first::after {
+    content: '';
+    margin-left: 74px;
+    margin-right: 96px;
+    background-image: url(../images/first-page/icons/knife.jpg);
+    background-repeat: no-repeat;
+}
+
+.about-item-title {
+    color: var(--main-gold-txt);
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.about-item-title::after {
+    content: '';
+    margin-top: 8px;
+    margin-bottom: 32px;
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: block;
+    height: 9px;
+}
+
+.about-item-first > h2::after {
+    background-image: url(../images/first-page/icons/left-spoon.jpg);
+    background-position: right;
+}
+
+.about-item-desc {
+    font-family: var(--second-family);
+    font-size: 16px;
+    color: var(--main-desc);
+    width: 523px;
+    padding-bottom: 32px;
+}
+
+.about-item-btn {
+    padding: 8px 32px;
+    background-color: var(--main-gold-txt);
+    color: var(--hero-btn-txt);
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.menu {
+    background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
+    padding-top: 261px;
+    padding-bottom: 262px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.menu-item-link {
+    color: var(--header-txt);
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-second);
+    line-height: var(--line-height-smaller);
+}
+
+.menu-item-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--menu-line);
+}
+/* Footer start */
+
+.footer {
+    background: linear-gradient(to right,
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(../images/second-page/backgrounds/background-image.jpg);
+    padding-bottom: 138px;
+}
