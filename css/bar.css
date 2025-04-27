@@ -39,7 +39,10 @@ body {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: black
+    background: linear-gradient(to right,
+                rgba(4, 4, 4, 0.5),
+                rgba(4, 4, 4, 0.5)),
+                url(../images/second-page/backgrounds/background-image.jpg);
 }
 
 .hero {
@@ -52,6 +55,7 @@ body {
 
 /* HEADER */
 
+
 .header-link {
     color: var(--header-txt);
     text-decoration: none;
@@ -60,6 +64,16 @@ body {
     line-height: 1.75px;
     letter-spacing: 4%;
     font-family: var(--second-family);
+}
+
+.header-reference {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 5%;
+    text-decoration: none;
+    color: var(--header-txt);
 }
 
 .header-logo {
@@ -82,6 +96,23 @@ body {
 .header-list {
     display: flex;
     gap: 32px;
+    padding-left: 437px;
+    padding-right: 271px;
+}
+
+
+.header-roster {
+    display: flex;
+}
+
+.header-element:nth-child(1) {
+    padding-right: 50px;
+    border-right: 1px solid ;
+}
+
+.header-element:nth-child(2) {
+    padding-left: 50px;
+    border-right: 1px solid ;
 }
 
 
