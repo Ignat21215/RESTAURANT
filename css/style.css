@@ -16,14 +16,16 @@
     --gallery-gradient-first: rgba(0, 0, 0, 0.75);
     --gallery-gradient-sercond: rgba(0, 0, 0, 0.64);
     --hero-btn-txt: rgba(12, 11, 8, 1);
-    --letter-spacing-second: 0.03;
-    --line-height-smaller: 1.35;
+    --letter-spacing-second: 0.03em;
+    --line-height-smaller: 1.35
+    --line-height-third: 1.3;
+    --letter-spacing-third: 0.05em;
     --form-border-color: rgba(220, 202, 135, 0.2);
 }
 
 body {
     line-height: 1.75;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     font-family: var(--font-family);
     background-color: var(--main-bg);
     background-image:
@@ -336,7 +338,7 @@ body {
 
 .newsletter-container {
     background-color: var(--view-btn-txt);
-    border: 1px solid var(--main-gold-txt);
+    border: 1px solid var(--form-border-color);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -359,7 +361,7 @@ body {
     font-weight: 700;
     font-family: var(--font-family);
     font-size: 23px;
-    letter-spacing: 4%;
+    letter-spacing: var(--letter-spacing-second);
     color: var(--header-txt);
     padding-bottom: 8px;
 }
@@ -377,7 +379,7 @@ body {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.04px;
+    letter-spacing: var(--letter-spacing-second);
     color: var(--header-txt);
     line-height: 175%;
 }
@@ -388,7 +390,7 @@ body {
     font-weight: 600;
     font-family: var(--font-family);
     font-size: 16px;
-    letter-spacing: 0.04px;
+    letter-spacing: var(--letter-spacing-second);
     background-color: var(--view-btn-txt);
     color: var(--main-desc);
     border: 1px solid var(--subscribe-input-border);
@@ -410,14 +412,16 @@ body {
 }
 .table-container {
     background-color: var(--view-btn-txt);
-    border: 1px solid var(--main-gold-txt);
+    border: 1px solid var(--form-border-color);
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 68px;
-    padding-bottom: 68px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .table-subtitle {
@@ -453,7 +457,7 @@ body {
     font-weight: 600;
     font-family: var(--font-family);
     font-size: 16px;
-    letter-spacing: 4%;
+    letter-spacing: var(--letter-spacing-second);
 }
 
 .table-form {
