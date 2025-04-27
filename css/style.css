@@ -18,6 +18,7 @@
     --hero-btn-txt: rgba(12, 11, 8, 1);
     --letter-spacing-second: 0.03;
     --line-height-smaller: 1.35;
+    --form-border-color: rgba(220, 202, 135, 0.2);
 }
 
 body {
@@ -63,7 +64,7 @@ body {
 
 .hero-subtitle::after {
     content: '';
-    background-image: url('../images/first-page/icons/right-spoon.jpg');
+    background-image: url('../images/first-page/icons/right-spoon.png');
     margin-top: 8px;
     margin-bottom: 8px;
     background-repeat: no-repeat;
@@ -141,7 +142,7 @@ body {
     content: '';
     margin-top: 8px;
     margin-bottom: 32px;
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     background-position: left;
     display: block;
@@ -149,7 +150,7 @@ body {
 }
 
 .about-item-first > h2::after {
-    background-image: url(../images/first-page/icons/left-spoon.jpg);
+    background-image: url(../images/first-page/icons/left-spoon.png);
     background-position: right;
 }
 
@@ -264,7 +265,7 @@ body {
 
 .footer-desc::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 40px;
@@ -334,8 +335,8 @@ body {
 }
 
 .newsletter-container {
-    background-color: #0c0c0c;
-    border: 1px solid #DCCA87;
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--main-gold-txt);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -344,7 +345,7 @@ body {
 }
 
 .newsletter-title {
-    color: #DCCA87;
+    color: var(--main-gold-txt);
     font-size: 64px;
     font-family: var(--font-family);
     letter-spacing: 3px;
@@ -365,7 +366,7 @@ body {
 
 .newsletter-subtitle::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     display: block;
     height: 9px;
@@ -403,9 +404,13 @@ body {
     background-color: var(--main-gold-txt);
     border: 1px solid var(--main-gold-txt);
 }
+
+.table{
+    padding-top: 157px;
+}
 .table-container {
-    background-color: #0c0c0c;
-    border: 1px solid #DCCA87;
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--main-gold-txt);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -420,12 +425,12 @@ body {
     font-size: 23px;
     font-family: var(--font-family);
     color: var(--header-txt);
-    padding-bottom: 8px;
+
 }
 
 .table-subtitle::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     display: block;
     height: 9px;
@@ -442,7 +447,7 @@ body {
 
 .table-select {
     padding: 16px 316px 16px 16px;
-    background-color: #0c0c0c;
+    background-color: var(--view-btn-txt);
     border: 1px solid var(--subscribe-input-border);
     color: var(--main-desc);
     font-weight: 600;
@@ -466,4 +471,13 @@ body {
     letter-spacing: 4%;
     background-color: var(--main-gold-txt);
     border: 1px solid var(--main-gold-txt);
+}
+
+.table-select-person,
+.table-select-time,
+.table-select-date {
+    color: var(--main-desc);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
 }
