@@ -131,4 +131,19 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+<<<<<<< HEAD
+=======
+}
+
+p {
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+button {
+    border: 0;
+>>>>>>> f0b9d56d6531cbf07e81b5d21b8dd7541ae46795
 }
