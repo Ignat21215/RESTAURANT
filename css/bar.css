@@ -36,9 +36,9 @@ body {
 
 .hero {
     background: linear-gradient(to right,
-                rgba(4, 4, 4, 0.5),
-                rgba(4, 4, 4, 0.5)),
-                url(../images/second-page/backgrounds/background-image.jpg);
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(../images/second-page/backgrounds/background-image.jpg);
     padding-bottom: 138px;
 }
 
@@ -58,15 +58,15 @@ body {
 
 .about {
     background: linear-gradient(to right,
-                rgba(4, 4, 4, 0.5),
-                rgba(4, 4, 4, 0.5)),
-                url(../images/second-page/backgrounds/background-image.jpg);
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(../images/second-page/backgrounds/background-image.jpg);
     padding-top: 128px;
     padding-bottom: 128px;
 }
 
 .about-container {
-    display: flex; 
+    display: flex;
     gap: 143px;
     justify-content: center;
 }
@@ -194,15 +194,15 @@ body {
 
 .hours {
     background:
-            linear-gradient(to left, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)),
-            url(../images/second-page/photos/martini.jpg) center / cover no-repeat;
+        linear-gradient(to left, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)),
+        url(../images/second-page/photos/martini.jpg) center / cover no-repeat;
     padding-top: 330px;
     padding-bottom: 330px;
     text-align: center;
 }
 
 .hours-title {
-    font-size: 128px; 
+    font-size: 128px;
     letter-spacing: var(--letter-spacing-second);
     line-height: var(--line-height-third);
     font-weight: 600;
@@ -221,9 +221,9 @@ body {
     padding-top: 128px;
     padding-bottom: 128px;
     background: linear-gradient(to right,
-    rgba(4, 4, 4, 0.5),
-    rgba(4, 4, 4, 0.5)),
-    url(../images/second-page/backgrounds/background-image.jpg);
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(../images/second-page/backgrounds/background-image.jpg);
 }
 
 .find-container {
@@ -285,4 +285,13 @@ body {
     color: var(--header-txt);
     font-family: var(--second-family);
     font-size: 16px;
+}
+
+.find-btn {
+    background-color: var(--main-gold-txt);
+    padding: 8px 32px;
+    color: var(--view-btn-txt);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
 }
