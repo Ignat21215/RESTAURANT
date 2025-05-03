@@ -18,6 +18,7 @@
     --hero-btn-txt: rgba(12, 11, 8, 1);
     --letter-spacing-second: 0.03;
     --line-height-smaller: 1.35;
+    --line-height-third: 1.3;
     --letter-spacing-second: 0.03em;
     --line-height-smaller: 1.35
     --line-height-third: 1.3;
@@ -50,15 +51,46 @@ body {
     padding-bottom: 267px;
 }
 
-.hero-container {
+.hero-top-container {
     display: flex;
     align-items: center;
-    gap: 180px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-hashtag {
+    color: var(--header-txt);
+    font-size: 18px;
+}
+
+.hero-hashtag-wrapper {
+    display: flex;
+    gap: 40px;
+    writing-mode: sideways-lr;
+    margin-right: 158px;
+}
+
+.hero-img::after {
+    content: 'scroll';
+    text-transform: uppercase;
+    color: var(--main-gold-txt);
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 64px;
+    padding-left: 129px;
+}
+
+.hero-aside {
+    color: var(--subscribe-input-border);
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 64px;
+    text-align: center;
 }
 
 .hero-wrapper {
     width: 453px;
+    margin-right: 180px;
 }
 
 .hero-subtitle {
@@ -188,7 +220,7 @@ body {
     gap: 64px;
 }
 
-.menu-item-link {
+.menu-link {
     color: var(--header-txt);
     font-size: 64px;
     font-weight: 600;
@@ -200,7 +232,6 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--menu-line);
 }
-/* Footer start */
 
 .footer {
     background: linear-gradient(to right,
