@@ -705,20 +705,3 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
-
-.table-select-person,
-.table-select-time,
-.table-select-date {
-    color: var(--main-desc);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.75;
-}
-.updates-subtitle {
-    display: block;
-    font-size: 23px;
-    color: var(--header-txt);
-    text-align: center;
-    font-family: var(--font-family);
-    margin-top: 152px;
-}
