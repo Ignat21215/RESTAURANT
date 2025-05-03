@@ -47,6 +47,27 @@ body {
     margin: 0 auto;
 }
 
+
+/* PADDING */
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: black;
+}
+
+.believe {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(./images/first-page/backgrounds/about_us-bg.jpg)
+}
+
+.customers {
+    padding-top: 152px;
+    padding-bottom: 152px;
+    background-color: black
+}
+
 .hero {
     padding-bottom: 267px;
 }
@@ -144,11 +165,13 @@ body {
     background-repeat: no-repeat;
 }
 
+
 .about-list {
     display: flex;
     justify-content: center;
     padding-top: 120px;
     padding-bottom: 136px;
+    align-items: center;
 }
 
 .about-item {
@@ -163,7 +186,7 @@ body {
     content: '';
     margin-left: 74px;
     margin-right: 96px;
-    background-image: url(../images/first-page/icons/knife.jpg);
+    background-image: url(./images/first-page/icons/knife.jpg);
     background-repeat: no-repeat;
 }
 
@@ -207,6 +230,89 @@ body {
     font-family: inherit;
     font-weight: 700;
 }
+
+.about-item:nth-child(1) {
+    padding-right: 74px;   
+}
+
+
+.about-item:nth-child(3) {
+    padding-left: 96px;
+}
+
+.about-img {
+    height: 703px;
+    width: 84px;
+}
+
+/* TABLE */
+
+.table-container {
+    background-color: #0c0c0c;
+    border: 1px solid #DCCA87;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.table-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    font-family: var(--font-family);
+    color: var(--header-txt);
+    padding-bottom: 8px;
+}
+
+.table-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: center;
+}
+
+.table-title {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--main-gold-txt);
+    padding-bottom:64px;
+}
+
+.table-select {
+    padding: 16px 316px 16px 16px;
+    background-color:#0c0c0c;
+    border: 1px solid var(--subscribe-input-border);
+    color: var(--main-desc);
+    font-weight: 600;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 4%;
+}
+
+.table-form {
+    display: flex;
+    gap: 32px;
+    padding-bottom: 64px;
+}
+
+.table-button {
+    padding: 8px 32px;
+    color: var(--view-btn-txt);
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 4%;
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
+}
+
+/* MENU */
 
 .menu {
     background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
