@@ -185,31 +185,22 @@ body {
 }
 
 
-.about-list {
+.about-box {
     display: flex;
-    justify-content: center;
     padding-top: 120px;
     padding-bottom: 136px;
     align-items: center;
+    justify-content: center;
 }
 
-.about-item {
-    text-align: left;
-}
 
-.about-item-first {
+
+.about-wrapper {
     text-align: right;
 }
 
-.about-item-first::after {
-    content: '';
-    margin-left: 74px;
-    margin-right: 96px;
-    background-image: url(./images/first-page/icons/knife.jpg);
-    background-repeat: no-repeat;
-}
 
-.about-item-title {
+.about-wrapper-title {
     color: var(--main-gold-txt);
     line-height: var(--line-height-smaller);
     letter-spacing: var(--letter-spacing-second);
@@ -217,7 +208,7 @@ body {
     font-weight: 600;
 }
 
-.about-item-title::after {
+.about-wrapper-title::after {
     content: '';
     margin-top: 8px;
     margin-bottom: 32px;
@@ -228,20 +219,19 @@ body {
     height: 9px;
 }
 
-.about-item-first > h2::after {
+.about-wrapper:nth-child(1) > h2::after {
     background-image: url(../images/first-page/icons/left-spoon.jpg);
     background-position: right;
 }
 
-.about-item-desc {
+.about-wrapper-desc {
     font-family: var(--second-family);
     font-size: 16px;
     color: var(--main-desc);
-    width: 523px;
     padding-bottom: 32px;
 }
 
-.about-item-btn {
+.about-wrapper-btn {
     padding: 8px 32px;
     background-color: var(--main-gold-txt);
     color: var(--hero-btn-txt);
@@ -250,19 +240,17 @@ body {
     font-weight: 700;
 }
 
-.about-item-btn:nth-child(1) {
-    margin-left:auto;
-}
 
 
-.about-item:nth-child(1) {
+.about-wrapper:first-of-type {
     padding-right: 74px;
     text-align: right
 }
 
 
-.about-item:nth-child(3) {
+.about-wrapper{
     padding-left: 96px;
+    text-align: left;
 }
 
 .about-img {
