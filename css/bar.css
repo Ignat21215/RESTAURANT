@@ -199,7 +199,7 @@ body {
 }
 
 .poison-item-desc:hover {
-     color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .first-item {
@@ -209,9 +209,9 @@ body {
 
 .first-item:hover {
     background:
-    linear-gradient(to top, rgba(12, 12, 12, 0.5), 
-    rgba(12, 12, 12, 0.5)),
-     url(../images/second-page/photos/beer.jpg);
+        linear-gradient(to top, rgba(12, 12, 12, 0.5),
+            rgba(12, 12, 12, 0.5)),
+        url(../images/second-page/photos/beer.jpg);
 }
 
 .second-item {
@@ -553,8 +553,9 @@ body {
     border: 1px solid var(--main-gold-txt);
     margin-left: 32px;
 }
-.table{
-    padding-top: 152px ;
+
+.table {
+    padding-top: 152px;
     padding-bottom: 152px;
 }
 
@@ -640,6 +641,7 @@ body {
     font-weight: 700;
     line-height: 1.75;
 }
+
 .updates-subtitle {
     display: block;
     font-size: 23px;

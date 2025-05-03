@@ -20,8 +20,7 @@
     --line-height-smaller: 1.35;
     --line-height-third: 1.3;
     --letter-spacing-second: 0.03em;
-    --line-height-smaller: 1.35
-    --line-height-third: 1.3;
+    --line-height-smaller: 1.35 --line-height-third: 1.3;
     --letter-spacing-third: 0.05em;
     --form-border-color: rgba(220, 202, 135, 0.2);
     --updates-img-border: rgba(196, 196, 196, 1);
@@ -133,13 +132,11 @@ body {
 /* ТУТ НЕ ЗАВЕРШЕНО */
 
 .about {
-    background-image:  linear-gradient(
-        to right,
-        rgba(4, 4, 4, 0.5),
-        rgba(4, 4, 4, 0.5)
-    ),
-    url(../images/first-page/icons/white-g.jpg),
-    url(../images/first-page/backgrounds/about_us-bg.jpg);
+    background-image: linear-gradient(to right,
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(../images/first-page/icons/white-g.jpg),
+        url(../images/first-page/backgrounds/about_us-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -186,7 +183,7 @@ body {
     height: 9px;
 }
 
-.about-item-first > h2::after {
+.about-item-first>h2::after {
     background-image: url(../images/first-page/icons/left-spoon.png);
     background-position: right;
 }
@@ -364,6 +361,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 /* ---------------- */
 .newsletter {
     height: 500px;
@@ -442,6 +440,7 @@ body {
     border: 1px solid var(--main-gold-txt);
     margin-left: 32px;
 }
+
 .table-container {
     background-color: var(--view-btn-txt);
     border: 1px solid var(--main-gold-txt);
@@ -515,6 +514,7 @@ body {
     font-weight: 700;
     line-height: 1.75;
 }
+
 .updates-subtitle {
     display: block;
     font-size: 23px;
@@ -578,27 +578,30 @@ body {
     font-size: 32px;
     color: var(--main-gold-txt);
     line-height: var(--line-height-third);
-    padding-bottom: 32px ;
+    padding-bottom: 32px;
 }
 
 .updates-article-title:hover {
     text-decoration: underline;
 }
-.updates-article-desc{
+
+.updates-article-desc {
     padding-left: 0;
     font-size: 16px;
     font-family: var(--second-family);
     color: var(--main-desc);
     padding-bottom: 32px;
 }
-.updates-article-link{
+
+.updates-article-link {
     color: var(--main-gold-txt);
     font-family: var(--font-family);
     line-height: 1.75;
     font-size: 16px;
     text-decoration: none;
 }
-.updates-button{
+
+.updates-button {
     font-family: var(--font-family);
     padding: 8px 32px;
     font-weight: 700;
@@ -610,6 +613,7 @@ body {
     margin: 0 auto;
     margin-top: 64px;
 }
-.updates-aticle-img{
+
+.updates-aticle-img {
     border: 0.5px solid rgba(220, 202, 135, 0.2);
 }
