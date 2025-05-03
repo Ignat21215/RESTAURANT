@@ -52,22 +52,29 @@ i<!DOCTYPE html>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-wrapper">
-            <p class="hero-subtitle">Chase the new Flavour</p>
-            <h1 class="hero-title">The key to Fine Dining</h1>
-            <p class="hero-desc">
-              Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-              volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-              aliquam amet tellus
-            </p>
-            <button type="button" class="hero-btn">Explore Menu</button>
+        <div class="container">
+          <div class="hero-top-container">
+            <div class="hero-hashtag-wrapper">
+              <p class="hero-hashtag">#Bar</p>
+              <p class="hero-hashtag">#Gericht</p>
+            </div>
+            <div class="hero-wrapper">
+              <p class="hero-subtitle">Chase the new Flavour</p>
+              <h1 class="hero-title">The key to Fine Dining</h1>
+              <p class="hero-desc">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+              <button type="button" class="hero-btn">Explore Menu</button>
+            </div>
+            <img
+              src="./images/first-page/photos/egg-salad.jpg"
+              alt="egg-salad"
+              class="hero-img"
+            />
           </div>
-          <img
-            src="./images/first-page/photos/egg-salad.jpg"
-            alt="egg-salad"
-            class="hero-img"
-          />
+          <aside class="hero-aside">01 - 02 03 04</aside>
         </div>
       </section>
       <section class="about">
@@ -99,48 +106,122 @@ i<!DOCTYPE html>
       </section>
       <section class="table">
         <div class="container table-container">
-              <p class="table-subtitle">Reservations</p>
-              <h2 class="table-title">Book A Table</h2>
-              <form action="" class="table-form">
-                <select id="Person" placeholder="1 Person" class="table-select">
-                  <option class="table-select-person">1 Person</option>
-                  <option class="table-select-person">2 Persons</option>
-                  <option class="table-select-person">3 Persons</option>
-                  <option class="table-select-person">4 Persons</option>
-                  <option class="table-select-person">5 Persons</option>
-                </select>
+          <p class="table-subtitle">Reservations</p>
+          <h2 class="table-title">Book A Table</h2>
+          <form action="" class="table-form">
+            <select id="Person" placeholder="1 Person" class="table-select">
+              <option class="table-select-person">1 Person</option>
+              <option class="table-select-person">2 Persons</option>
+              <option class="table-select-person">3 Persons</option>
+              <option class="table-select-person">4 Persons</option>
+              <option class="table-select-person">5 Persons</option>
+            </select>
 
-                <select id="Date" placeholder="12/05/2024" class="table-select">
-                  <option class="table-select-date">12/05/2021</option>
-                  <option class="table-select-date">13/05/2021</option>
-                  <option class="table-select-date">14/05/2021</option>
-                  <option class="table-select-date">15/05/2021</option>
-                  <option class="table-select-date">16/05/2021</option>
-                  <option class="table-select-date">17/05/2021</option>
-                  <option class="table-select-date">18/05/2021</option>
-                  <option class="table-select-date">19/05/2021</option>
-                  <option class="table-select-date">20/05/2021</option>
-                  <option class="table-select-date">21/05/2021</option>
-                </select>
+            <select id="Date" placeholder="12/05/2024" class="table-select">
+              <option class="table-select-date">12/05/2021</option>
+              <option class="table-select-date">13/05/2021</option>
+              <option class="table-select-date">14/05/2021</option>
+              <option class="table-select-date">15/05/2021</option>
+              <option class="table-select-date">16/05/2021</option>
+              <option class="table-select-date">17/05/2021</option>
+              <option class="table-select-date">18/05/2021</option>
+              <option class="table-select-date">19/05/2021</option>
+              <option class="table-select-date">20/05/2021</option>
+              <option class="table-select-date">21/05/2021</option>
+            </select>
 
-                <select id="Time" placeholder="12/05/2024" class="table-select">
-                  <option class="table-select-time">11:00 AM</option>
-                  <option class="table-select-time">12:00 AM</option>
-                  <option class="table-select-time">01:00 PM</option>
-                  <option class="table-select-time">02:00 PM</option>
-                  <option class="table-select-time">03:00 PM</option>
-                  <option class="table-select-time">04:00 PM</option>
-                  <option class="table-select-time">05:00 PM</option>
-                  <option class="table-select-time">06:00 PM</option>
-                  <option class="table-select-time">07:00 PM</option>
-                  <option class="table-select-time">08:00 PM</option>
-                  <option class="table-select-time">09:00 PM</option>
-                  <option class="table-select-time">10:00 PM</option>
-                </select>
-
-                
-              </form>
-              <button class="table-button">Book Now</button>
+            <select id="Time" placeholder="12/05/2024" class="table-select">
+              <option class="table-select-time">11:00 AM</option>
+              <option class="table-select-time">12:00 AM</option>
+              <option class="table-select-time">01:00 PM</option>
+              <option class="table-select-time">02:00 PM</option>
+              <option class="table-select-time">03:00 PM</option>
+              <option class="table-select-time">04:00 PM</option>
+              <option class="table-select-time">05:00 PM</option>
+              <option class="table-select-time">06:00 PM</option>
+              <option class="table-select-time">07:00 PM</option>
+              <option class="table-select-time">08:00 PM</option>
+              <option class="table-select-time">09:00 PM</option>
+              <option class="table-select-time">10:00 PM</option>
+            </select>
+          </form>
+          <button class="table-button">Book Now</button>
+        </div>
+      </section>
+      <section class="updates">
+        <div class="container">
+          <p class="updates-subtitle">Blogs</p>
+          <h2 class="updates-title">Gerícht Updates</h2>
+          <ul class="updates-list">
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/barbeque.jpg"
+                  alt="Nice photo of Barbeque Ribs"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">16 Apr 2021</p>
+                  <p class="updates-wrapper-text">- Annalisa L</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Tips For Prepping And Caring For Your Grill
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/gluhwein-drink.png"
+                  alt="Nice photo of Gluhvein Drink in our Bar"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">23 May 2021</p>
+                  <p class="updates-wrapper-text">-John Micheal</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Summer Cocktails And <br />
+                  Mocktails
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/meatballs.png"
+                  alt="Nice photo of meat balls in our cafe"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">06 Aug 2021</p>
+                  <p class="updates-wrapper-text">-Fred W</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Easy Cooking For College Students
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+          </ul>
+          <button class="updates-button">View More</button>
         </div>
       </section>
       <section class="menu">
