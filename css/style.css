@@ -19,12 +19,17 @@
     --letter-spacing-second: 0.03;
     --line-height-smaller: 1.35;
     --line-height-third: 1.3;
+    --letter-spacing-second: 0.03em;
+    --line-height-smaller: 1.35
+    --line-height-third: 1.3;
+    --letter-spacing-third: 0.05em;
     --form-border-color: rgba(220, 202, 135, 0.2);
+    --updates-img-border: rgba(196, 196, 196, 1);
 }
 
 body {
     line-height: 1.75;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     font-family: var(--font-family);
     background-color: var(--main-bg);
     background-image:
@@ -366,8 +371,10 @@ body {
 }
 
 .newsletter-container {
-    background-color: var(--view-btn-txt);
+    background-color: var(--main-bg);
     border: 1px solid var(--main-gold-txt);
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--form-border-color);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -390,7 +397,7 @@ body {
     font-weight: 700;
     font-family: var(--font-family);
     font-size: 23px;
-    letter-spacing: 4%;
+    letter-spacing: var(--letter-spacing-second);
     color: var(--header-txt);
     padding-bottom: 8px;
 }
@@ -408,7 +415,7 @@ body {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.04px;
+    letter-spacing: var(--letter-spacing-second);
     color: var(--header-txt);
     line-height: 175%;
 }
@@ -419,7 +426,7 @@ body {
     font-weight: 600;
     font-family: var(--font-family);
     font-size: 16px;
-    letter-spacing: 0.04px;
+    letter-spacing: var(--letter-spacing-second);
     background-color: var(--view-btn-txt);
     color: var(--main-desc);
     border: 1px solid var(--subscribe-input-border);
@@ -430,25 +437,21 @@ body {
     padding: 8px 32px;
     font-weight: 700;
     font-size: 16px;
-    margin-left: 32px;
     color: var(--view-btn-txt);
     background-color: var(--main-gold-txt);
     border: 1px solid var(--main-gold-txt);
-}
-
-.table{
-    padding-top: 157px;
+    margin-left: 32px;
 }
 .table-container {
     background-color: var(--view-btn-txt);
     border: 1px solid var(--main-gold-txt);
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding-top: 68px;
     padding-bottom: 68px;
+
 }
 
 .table-subtitle {
@@ -511,4 +514,102 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.75;
+}
+.updates-subtitle {
+    display: block;
+    font-size: 23px;
+    color: var(--header-txt);
+    text-align: center;
+    font-family: var(--font-family);
+    margin-top: 152px;
+}
+
+.updates-subtitle::after {
+    content: '';
+    background-image: url('../images/first-page/icons/right-spoon.png');
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: center;
+}
+
+.updates-title {
+    display: block;
+    font-size: 64px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--main-gold-txt);
+    padding-bottom: 64px;
+}
+
+.updates-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 412px;
+}
+
+.updates-wrapper-text {
+    color: var(--menu-line);
+    font-family: var(--second-family);
+    line-height: 175%;
+    padding-bottom: 32px;
+    padding-top: 24px;
+}
+
+.updates-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.updates-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 412px;
+    text-align: left;
+    border-color: var(--gallery-img-border);
+}
+
+.updates-article-title {
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--main-gold-txt);
+    line-height: var(--line-height-third);
+    padding-bottom: 32px ;
+}
+
+.updates-article-title:hover {
+    text-decoration: underline;
+}
+.updates-article-desc{
+    padding-left: 0;
+    font-size: 16px;
+    font-family: var(--second-family);
+    color: var(--main-desc);
+    padding-bottom: 32px;
+}
+.updates-article-link{
+    color: var(--main-gold-txt);
+    font-family: var(--font-family);
+    line-height: 1.75;
+    font-size: 16px;
+    text-decoration: none;
+}
+.updates-button{
+    font-family: var(--font-family);
+    padding: 8px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--view-btn-txt);
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
+    display: block;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+.updates-aticle-img{
+    border: 0.5px solid rgba(220, 202, 135, 0.2);
 }
