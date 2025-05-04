@@ -183,7 +183,7 @@ body {
 
 .about-subtitle::after {
     content: '';
-    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-image: url(../images/second-page/icons/right-spoon.png);
     background-position: left;
     background-repeat: no-repeat;
     display: block;
@@ -236,7 +236,7 @@ body {
 
 .poison-subtitle::after {
     content: '';
-    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-image: url(../images/second-page/icons/right-spoon.png);
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -363,7 +363,7 @@ body {
 .find-subtitle::after {
     content: '';
     display: block;
-    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-image: url(../images/second-page/icons/right-spoon.png);
     background-position: left;
     background-repeat: no-repeat;
     width: 40px;
