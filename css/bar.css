@@ -628,9 +628,13 @@ body {
     margin-left: 32px;
 }
 
-.table {
+.table{
+    padding-top: 152px ;
+    padding-bottom: 152px;
+    background-color: var(--hero-btn-txt);
     padding-top: 160px;
     padding-bottom: 160px;
+
 }
 
 .table-container {
