@@ -18,14 +18,27 @@
     --hero-btn-txt: rgba(12, 11, 8, 1);
     --letter-spacing-second: 0.03;
     --line-height-smaller: 1.35;
+    --line-height-third: 1.3;
+    --letter-spacing-second: 0.03em;
+    --line-height-smaller: 1.35;
+    --form-border-color: rgba(220, 202, 135, 0.2);
+    --updates-img-border: rgba(196, 196, 196, 1);
 }
 
 body {
     line-height: 1.75;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     font-family: var(--font-family);
-    background-color: var(--hero-btn-txt);
+    background-color: var(--main-bg);
+    background-image:
+        linear-gradient(to right,
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(/RESTAURANT/images/first-page/backgrounds/wave-element.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
 }
+
 
 .container {
     width: 1680px;
@@ -38,7 +51,7 @@ body {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: black;
+    background-color: var(--hero-btn-txt);
 }
 
 .believe {
@@ -55,11 +68,13 @@ body {
 
 .hero {
     padding-bottom: 267px;
-    padding-top: 48px;
+    background-color: var(--hero-btn-txt);
 }
 
-
-/* HEADER */
+.hero-top-container {
+    display: flex;
+    align-items: center;
+}
 
 .header-link {
     color: var(--header-txt);
@@ -112,11 +127,12 @@ body {
 
 .header-element:nth-child(1) {
     padding-right: 50px;
-    border-right: 1px solid radial-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));;
+    border-right: 1px solid ;
 }
 
 .header-element:nth-child(2) {
     padding-left: 50px;
+    border-right: 1px solid ;
 }
 
 
@@ -127,10 +143,42 @@ body {
     align-items: center;
     gap: 180px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-hashtag {
+    color: var(--header-txt);
+    font-size: 18px;
+}
+
+.hero-hashtag-wrapper {
+    display: flex;
+    gap: 40px;
+    writing-mode: sideways-lr;
+    margin-right: 158px;
+}
+
+.hero-img::after {
+    content: 'scroll';
+    text-transform: uppercase;
+    color: var(--main-gold-txt);
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 64px;
+    padding-left: 129px;
+}
+
+.hero-aside {
+    color: var(--subscribe-input-border);
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 64px;
+    text-align: center;
 }
 
 .hero-wrapper {
     width: 453px;
+    margin-right: 180px;
 }
 
 .hero-subtitle {
@@ -141,7 +189,7 @@ body {
 
 .hero-subtitle::after {
     content: '';
-    background-image: url('../images/first-page/icons/right-spoon.jpg');
+    background-image: url('../images/first-page/icons/right-spoon.png');
     margin-top: 8px;
     margin-bottom: 8px;
     background-repeat: no-repeat;
@@ -212,7 +260,7 @@ body {
     content: '';
     margin-top: 8px;
     margin-bottom: 32px;
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     background-position: left;
     display: block;
@@ -220,10 +268,9 @@ body {
 }
 
 .about-wrapper:nth-child(1) > h2::after {
-    background-image: url(../images/first-page/icons/left-spoon.jpg);
+    background-image: url(../images/first-page/icons/left-spoon.png);
     background-position: right;
 }
-
 .about-wrapper-desc {
     font-family: var(--second-family);
     font-size: 16px;
@@ -259,17 +306,22 @@ body {
 }
 
 /* TABLE */
+.table{
+    padding-top: 152px ;
+    padding-bottom: 152px;
+    background-color: var(--hero-btn-txt);
+}
 
 .table-container {
-    background-color: #0c0c0c;
-    border: 1px solid #DCCA87;
-    height: 100%;
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--main-gold-txt);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding-top: 68px;
     padding-bottom: 68px;
+
 }
 
 .table-subtitle {
@@ -277,12 +329,12 @@ body {
     font-size: 23px;
     font-family: var(--font-family);
     color: var(--header-txt);
-    padding-bottom: 8px;
+
 }
 
 .table-subtitle::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     display: block;
     height: 9px;
@@ -294,12 +346,12 @@ body {
     font-weight: 600;
     font-family: var(--font-family);
     color: var(--main-gold-txt);
-    padding-bottom:64px;
+    padding-bottom: 64px;
 }
 
 .table-select {
     padding: 16px 316px 16px 16px;
-    background-color:#0c0c0c;
+    background-color: var(--view-btn-txt);
     border: 1px solid var(--subscribe-input-border);
     color: var(--main-desc);
     font-weight: 600;
@@ -325,34 +377,16 @@ body {
     border: 1px solid var(--main-gold-txt);
 }
 
-/* MENU */
 
-.menu {
-    background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
-    padding-top: 261px;
-    padding-bottom: 262px;
+.table-select-person,
+.table-select-time,
+.table-select-date {
+    color: var(--main-desc);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
 }
 
-.menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-}
-
-.menu-item-link {
-    color: var(--header-txt);
-    font-size: 64px;
-    font-weight: 600;
-    letter-spacing: var(--letter-spacing-second);
-    line-height: var(--line-height-smaller);
-}
-
-.menu-item-link:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--menu-line);
-}
-
-/* BELIEVE */
 
 .believe {
     background-image: url("../images/first-page/backgrounds/about_us-bg.jpg");
@@ -444,6 +478,8 @@ body {
     padding-bottom: 64px;
 }
 
+
+
 /* CUSTOMERS */
 
 .customers {
@@ -525,7 +561,32 @@ body {
     width: 412px;
 }
 
-/* Footer start */
+/* MENU */
+
+.menu {
+    background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
+    padding-top: 261px;
+    padding-bottom: 262px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.menu-link {
+    color: var(--header-txt);
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-second);
+    line-height: var(--line-height-smaller);
+}
+
+.menu-item-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--menu-line);
+}
 
 .footer {
     background: linear-gradient(to right,
@@ -533,17 +594,142 @@ body {
             rgba(4, 4, 4, 0.5)),
         url(../images/second-page/backgrounds/background-image.jpg);
     padding-bottom: 138px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* NEWSLETTER */
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 126px;
+}
 
+.footer-adress {
+    text-align: center;
+}
+
+.footer-adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-adress-item-title {
+    color: var(--subscribe-input-border);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    margin-bottom: 24px;
+}
+
+.footer-adress-item-desc {
+    color: var(--main-desc);
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-title {
+    color: var(--main-gold-txt);
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.footer-desc {
+    color: var(--header-txt);
+    text-align: center;
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    margin-bottom: 16px;
+    width: 438px;
+}
+
+.footer-desc::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 9px;
+    margin: 16px auto;
+    display: block;
+}
+
+.footer-sm-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-item-title {
+    color: var(--subscribe-input-border);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    padding-bottom: 16px;
+}
+
+.footer-item-desc {
+    color: var(--main-desc);
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--line-height-smaller);
+}
+
+.footer-copyright {
+    color: var(--main-desc);
+    text-align: center;
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    display: block !important;
+}
+
+.footer-container {
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+}
+
+.footer-box {
+    display: flex;
+    gap: 229px;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------------- */
 .newsletter {
     height: 500px;
     padding: 80px 180px;
 }
+
 .newsletter-container {
-    background-color: #0c0c0c;
-    border: 1px solid #DCCA87;
+    background-color: var(--main-bg);
+    border: 1px solid var(--main-gold-txt);
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--form-border-color);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -551,8 +737,8 @@ body {
     justify-content: space-evenly;
 }
 
-.newsletter-title{
-    color: #DCCA87;
+.newsletter-title {
+    color: var(--main-gold-txt);
     font-size: 64px;
     font-family: var(--font-family);
     letter-spacing: 3px;
@@ -566,35 +752,36 @@ body {
     font-weight: 700;
     font-family: var(--font-family);
     font-size: 23px;
-    letter-spacing: 4%;
+    letter-spacing: var(--letter-spacing-second);
     color: var(--header-txt);
     padding-bottom: 8px;
 }
 
 .newsletter-subtitle::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     display: block;
     height: 9px;
-    background-position:center ;
+    background-position: center;
 }
 
 .newsletter-text {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.04px;
+    letter-spacing: var(--letter-spacing-second);
     color: var(--header-txt);
+    line-height: 175%;
 }
 
 
 .newsletter-input {
     padding: 16px 519px 16px 19px;
-    font-weight:600;
+    font-weight: 600;
     font-family: var(--font-family);
     font-size: 16px;
-    letter-spacing: 0.04px;
+    letter-spacing: var(--letter-spacing-second);
     background-color: var(--view-btn-txt);
     color: var(--main-desc);
     border: 1px solid var(--subscribe-input-border);
@@ -605,8 +792,179 @@ body {
     padding: 8px 32px;
     font-weight: 700;
     font-size: 16px;
-    margin-left: 32px;
     color: var(--view-btn-txt);
     background-color: var(--main-gold-txt);
     border: 1px solid var(--main-gold-txt);
+    margin-left: 32px;
+}
+.table-container {
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--main-gold-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 68px;
+    padding-bottom: 68px;
+
+}
+
+.table-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    font-family: var(--font-family);
+    color: var(--header-txt);
+
+}
+
+.table-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: center;
+}
+
+.table-title {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--main-gold-txt);
+    padding-bottom: 64px;
+}
+
+.table-select {
+    padding: 16px 316px 16px 16px;
+    background-color: var(--view-btn-txt);
+    border: 1px solid var(--subscribe-input-border);
+    color: var(--main-desc);
+    font-weight: 600;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 4%;
+}
+
+.table-form {
+    display: flex;
+    gap: 32px;
+    padding-bottom: 64px;
+}
+
+.table-button {
+    padding: 8px 32px;
+    color: var(--view-btn-txt);
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 16px;
+    letter-spacing: 4%;
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
+}
+
+.table-select-person,
+.table-select-time,
+.table-select-date {
+    color: var(--main-desc);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+.updates-subtitle {
+    display: block;
+    font-size: 23px;
+    color: var(--header-txt);
+    text-align: center;
+    font-family: var(--font-family);
+    margin-top: 152px;
+}
+
+.updates-subtitle::after {
+    content: '';
+    background-image: url('../images/first-page/icons/right-spoon.png');
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: center;
+}
+
+.updates-title {
+    display: block;
+    font-size: 64px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--main-gold-txt);
+    padding-bottom: 64px;
+}
+
+.updates-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 412px;
+}
+
+.updates-wrapper-text {
+    color: var(--menu-line);
+    font-family: var(--second-family);
+    line-height: 175%;
+    padding-bottom: 32px;
+    padding-top: 24px;
+}
+
+.updates-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.updates-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 412px;
+    text-align: left;
+    border-color: var(--gallery-img-border);
+}
+
+.updates-article-title {
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--main-gold-txt);
+    line-height: var(--line-height-third);
+    padding-bottom: 32px ;
+}
+
+.updates-article-title:hover {
+    text-decoration: underline;
+}
+.updates-article-desc{
+    padding-left: 0;
+    font-size: 16px;
+    font-family: var(--second-family);
+    color: var(--main-desc);
+    padding-bottom: 32px;
+}
+.updates-article-link{
+    color: var(--main-gold-txt);
+    font-family: var(--font-family);
+    line-height: 1.75;
+    font-size: 16px;
+    text-decoration: none;
+}
+.updates-button{
+    font-family: var(--font-family);
+    padding: 8px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--view-btn-txt);
+    background-color: var(--main-gold-txt);
+    border: 1px solid var(--main-gold-txt);
+    display: block;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+.updates-aticle-img{
+    border: 0.5px solid rgba(220, 202, 135, 0.2);
 }
