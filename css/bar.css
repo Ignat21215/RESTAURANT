@@ -183,7 +183,7 @@ body {
 
 .about-subtitle::after {
     content: '';
-    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-image: url(../images/second-page/icons/right-spoon.png);
     background-position: left;
     background-repeat: no-repeat;
     display: block;
@@ -236,7 +236,7 @@ body {
 
 .poison-subtitle::after {
     content: '';
-    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-image: url(../images/second-page/icons/right-spoon.png);
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -273,7 +273,7 @@ body {
 }
 
 .poison-item-desc:hover {
-     color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .first-item {
@@ -283,9 +283,9 @@ body {
 
 .first-item:hover {
     background:
-    linear-gradient(to top, rgba(12, 12, 12, 0.5), 
-    rgba(12, 12, 12, 0.5)),
-     url(../images/second-page/photos/beer.jpg);
+        linear-gradient(to top, rgba(12, 12, 12, 0.5),
+            rgba(12, 12, 12, 0.5)),
+        url(../images/second-page/photos/beer.jpg);
 }
 
 .second-item {
@@ -363,7 +363,7 @@ body {
 .find-subtitle::after {
     content: '';
     display: block;
-    background-image: url(../images/second-page/icons/right-spoon.jpg);
+    background-image: url(../images/second-page/icons/right-spoon.png);
     background-position: left;
     background-repeat: no-repeat;
     width: 40px;
@@ -627,10 +627,14 @@ body {
     border: 1px solid var(--main-gold-txt);
     margin-left: 32px;
 }
+
 .table{
     padding-top: 152px ;
     padding-bottom: 152px;
     background-color: var(--hero-btn-txt);
+    padding-top: 160px;
+    padding-bottom: 160px;
+
 }
 
 .table-container {
@@ -715,6 +719,7 @@ body {
     font-weight: 700;
     line-height: 1.75;
 }
+
 .updates-subtitle {
     display: block;
     font-size: 23px;

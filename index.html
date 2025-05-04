@@ -49,25 +49,42 @@ i<!DOCTYPE html>
               </li>
           </ul>
       </div>
+
     </header>
+
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-wrapper">
-            <p class="hero-subtitle">Chase the new Flavour</p>
-            <h1 class="hero-title">The key to Fine Dining</h1>
-            <p class="hero-desc">
-              Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-              volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-              aliquam amet tellus
-            </p>
-            <button type="button" class="hero-btn">Explore Menu</button>
+        <div class="container">
+          <div class="hero-top-container">
+            <div class="hero-hashtag-wrapper">
+              <p class="hero-hashtag">#Bar</p>
+              <p class="hero-hashtag">#Gericht</p>
+            </div>
+            <div class="hero-wrapper">
+              <p class="hero-subtitle">Chase the new Flavour</p>
+              <h1 class="hero-title">The key to Fine Dining</h1>
+              <p class="hero-desc">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+              <button type="button" class="hero-btn">Explore Menu</button>
+            </div>
+            <img
+              src="./images/first-page/photos/egg-salad.png"
+              alt="egg-salad"
+              class="hero-img"
+            />
           </div>
+
           <img
             src="./images/first-page/photos/egg-salad.png"
             alt="egg-salad"
             class="hero-img"
           />
+
+          <aside class="hero-aside">01 - 02 03 04</aside>
+
         </div>
       </section>
       <section class="about">
@@ -97,6 +114,7 @@ i<!DOCTYPE html>
       </section>
       <section class="table">
         <div class="container table-container">
+
             <p class="table-subtitle">Reservations</p>
             <h2 class="table-title">Book A Table</h2>
             <form action="" class="table-form">
@@ -140,6 +158,125 @@ i<!DOCTYPE html>
             </form>
             <button class="table-button">Book Now</button>
           </div>
+
+          <p class="table-subtitle">Reservations</p>
+          <h2 class="table-title">Book A Table</h2>
+          <form action="" class="table-form">
+            <select id="Person" placeholder="1 Person" class="table-select">
+              <option class="table-select-person">1 Person</option>
+              <option class="table-select-person">2 Persons</option>
+              <option class="table-select-person">3 Persons</option>
+              <option class="table-select-person">4 Persons</option>
+              <option class="table-select-person">5 Persons</option>
+            </select>
+
+            <select id="Date" placeholder="12/05/2024" class="table-select">
+              <option class="table-select-date">12/05/2021</option>
+              <option class="table-select-date">13/05/2021</option>
+              <option class="table-select-date">14/05/2021</option>
+              <option class="table-select-date">15/05/2021</option>
+              <option class="table-select-date">16/05/2021</option>
+              <option class="table-select-date">17/05/2021</option>
+              <option class="table-select-date">18/05/2021</option>
+              <option class="table-select-date">19/05/2021</option>
+              <option class="table-select-date">20/05/2021</option>
+              <option class="table-select-date">21/05/2021</option>
+            </select>
+
+            <select id="Time" placeholder="12/05/2024" class="table-select">
+              <option class="table-select-time">11:00 AM</option>
+              <option class="table-select-time">12:00 AM</option>
+              <option class="table-select-time">01:00 PM</option>
+              <option class="table-select-time">02:00 PM</option>
+              <option class="table-select-time">03:00 PM</option>
+              <option class="table-select-time">04:00 PM</option>
+              <option class="table-select-time">05:00 PM</option>
+              <option class="table-select-time">06:00 PM</option>
+              <option class="table-select-time">07:00 PM</option>
+              <option class="table-select-time">08:00 PM</option>
+              <option class="table-select-time">09:00 PM</option>
+              <option class="table-select-time">10:00 PM</option>
+            </select>
+          </form>
+          <button class="table-button">Book Now</button>
+        </div>
+      </section>
+      <section class="updates">
+        <div class="container">
+          <p class="updates-subtitle">Blogs</p>
+          <h2 class="updates-title">Gerícht Updates</h2>
+          <ul class="updates-list">
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/barbeque.jpg"
+                  alt="Nice photo of Barbeque Ribs"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">16 Apr 2021</p>
+                  <p class="updates-wrapper-text">- Annalisa L</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Tips For Prepping And Caring For Your Grill
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/gluhwein-drink.png"
+                  alt="Nice photo of Gluhvein Drink in our Bar"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">23 May 2021</p>
+                  <p class="updates-wrapper-text">-John Micheal</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Summer Cocktails And <br />
+                  Mocktails
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/meatballs.png"
+                  alt="Nice photo of meat balls in our cafe"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">06 Aug 2021</p>
+                  <p class="updates-wrapper-text">-Fred W</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Easy Cooking For College Students
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+          </ul>
+          <button class="updates-button">View More</button>
+        </div>
+
       </section>
       <section class="menu">
         <div class="container">
@@ -228,6 +365,109 @@ i<!DOCTYPE html>
           </form>
         </div>
       </section>
+
+      <section class="offers">
+        <div class="container offers-container">
+            <p class="offers-subtitle">Menu that fits you palatte</p>
+            <h2 class="offers-title">Today’s Special</h2>
+            <h3 class="offers-lead">Wine & Beer</h3>
+            <ul class="offers-list">
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Chapel Hill Shiraz</h4>
+                    <p class="offers-list-desc">AU | Bottle</p>
+                    <p class="offers-list--price">$56</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Catena Malbec</h4>
+                    <p class="offers-list-desc">AR | Bottle</p>
+                    <p class="offers-list-price">$59</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">La Vieille Rosé</h4>
+                    <p class="offers-list-desc">FR | 750 ml</p>
+                    <p class="offers-list-price">$31</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Rhino Pale Ale</h4>
+                    <p class="offers-list-desc">CA | 750 ml</p>
+                    <p class="offers-list-price">$31</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Irish Guinness</h4>
+                    <p class="offers-list-desc">IE | 750 ml</p>
+                    <p class="offers-list-price">$26</p>
+                </li>
+            </ul>
+            <h3 class="offers-lead">Cocktails</h3>
+            <ul class="offers-list">
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Aperol Spritz</h4>
+                    <p class="offers-list-desc">Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+                    <p class="offers-list-price">$20</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Dark 'N' Stormy</h4>
+                    <p class="offers-list-desc">Dark rum | Ginger beer | Slice of lime. </p>
+                    <p class="offers-list-price">$16</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Daiquiri</h4>
+                    <p class="offers-list-desc">Rum | Citrus juice | Sugar</p>
+                    <p class="offers-list-price">$10</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Old Fashioned</h4>
+                    <p class="offers-list-desc">Bourbon | Brown sugar | Angostura Bitters</p>
+                    <p class="offers-list-price">$31</p>
+                </li>
+                <li class="offers-item">
+                    <h4 class="offers-list-subtitle">Negroni</h4> 
+                    <p class="offers-list-desc">Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                    <p class="offers-list-price">$26</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="video">
+        <div class="container video-container">
+        <div class="video-box"></div>
+        </div>
+    </section>
+    <section class="laurels">
+        <div class="container laurels-container">
+            <p class="laurels-subtitle">Awards & recognition</p>
+            <h2 class="laurels-title">Our Laurels</h2>
+            <ul class="laurels-list"> 
+                <li class="laurels-item"> 
+                    <h3 class="laurels-item-title">Bib Gourmond</h3>
+                    <p class="laurels-item-desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                </li>
+                <li class="laurels-item"> 
+                    <h3 class="laurels-item-title">Rising Star</h3>
+                    <p class="laurels-item-desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                </li>
+                <li class="laurels-item"> 
+                    <h3 class="laurels-item-title">AA Hospitality </h3>
+                    <p class="laurels-item-desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                </li>
+                <li class="laurels-item"> 
+                    <h3 class="laurels-item-title">Outstanding Chef</h3>
+                    <p class="laurels-item-desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container gallery-container">
+            <p class="gallery-subtitle">Instagram</p>
+            <h2 class="gallery-title">Photo Gallery</h2>
+            <p class="gallery-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+            <button type="button" class="gallery-button">View More</button>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+
       <div class="container footer-container">
         <div class="footer-box">
           <div class="footer-wrapper">
@@ -260,7 +500,7 @@ i<!DOCTYPE html>
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/facebook-icon.jpg"
+                      src="./images/first-page/icons/facebook-icon.png"
                       alt="Facebook"
                   /></a>
                 </li>
@@ -268,7 +508,7 @@ i<!DOCTYPE html>
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/twitter-icon.jpg"
+                      src="./images/first-page/icons/twitter-icon.png"
                       alt="Twitter"
                   /></a>
                 </li>
@@ -276,7 +516,7 @@ i<!DOCTYPE html>
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/insta-icon-beige.jpg"
+                      src="./images/first-page/icons/insta-icon-beige.png"
                       alt="Instagram"
                   /></a>
                 </li>
@@ -306,3 +546,5 @@ i<!DOCTYPE html>
     </footer>
   </body>
 </html>
+
+
