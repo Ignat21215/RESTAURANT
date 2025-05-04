@@ -20,7 +20,8 @@
     --line-height-smaller: 1.35;
     --line-height-third: 1.3;
     --letter-spacing-second: 0.03em;
-    --line-height-smaller: 1.35 --line-height-third: 1.3;
+    --line-height-smaller: 1.35;
+    --line-height-third: 1.3;
     --letter-spacing-third: 0.05em;
     --form-border-color: rgba(220, 202, 135, 0.2);
     --updates-img-border: rgba(196, 196, 196, 1);
@@ -52,7 +53,10 @@ body {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: black;
+    background: linear-gradient(to right,
+                rgba(4, 4, 4, 0.5),
+                rgba(4, 4, 4, 0.5)),
+                url(../images/second-page/backgrounds/background-image.jpg);
 }
 
 .believe {
@@ -66,6 +70,7 @@ body {
     padding-bottom: 152px;
     background-color: black
 }
+
 
 .hero {
     padding-bottom: 267px;
