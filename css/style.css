@@ -1,3 +1,4 @@
+
 :root {
     --font-family: "Cormorant Upright", sans-serif;
     --second-family: "Open Sans", sans-serif;
@@ -660,6 +661,7 @@ body {
     letter-spacing: 4%;
     background-color: var(--main-gold-txt);
     border: 1px solid var(--main-gold-txt);
+
 } 
 .table-select-person,
 .table-select-time,
@@ -669,3 +671,4 @@ body {
     font-weight: 700;
     line-height: 1.75;
 }
+
