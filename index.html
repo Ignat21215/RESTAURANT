@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+i<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- git push origin feature/maksym -->
     <title>Gericht</title>
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
@@ -17,27 +18,64 @@
     <link href="https://fonts.cdnfonts.com/css/bestermind" rel="stylesheet" />
   </head>
   <body>
+    <header class="header">
+      <div class="container header-container">
+          <a href="index.html" class="header-logo">
+              <p class="header-text">Gericht</p>
+          </a>
+          <ul class="header-list">
+              <li class="header-item">
+                  <a href="index.html" class="header-link">Home</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link"> Pages</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link"> Contact Us</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link">Blog</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link">Landing</a>
+              </li>
+          </ul>
+          <ul class="header-roster"> 
+              <li class="header-element">
+                <a href="" class="header-reference">Login in / Registration</a>
+              </li>
+              <li class="header-element">
+                <a href="" class="header-reference">Book Table</a>
+              </li>
+          </ul>
+      </div>
+  </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-wrapper">
-            <p class="hero-subtitle">Chase the new Flavour</p>
-            <h1 class="hero-title">The key to Fine Dining</h1>
-            <p class="hero-desc">
-              Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-              volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-              aliquam amet tellus
-            </p>
-            <button type="button" class="hero-btn">Explore Menu</button>
+        <div class="container">
+          <div class="hero-top-container">
+            <div class="hero-hashtag-wrapper">
+              <p class="hero-hashtag">#Bar</p>
+              <p class="hero-hashtag">#Gericht</p>
+            </div>
+            <div class="hero-wrapper">
+              <p class="hero-subtitle">Chase the new Flavour</p>
+              <h1 class="hero-title">The key to Fine Dining</h1>
+              <p class="hero-desc">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+              <button type="button" class="hero-btn">Explore Menu</button>
+            </div>
+            <img
+              src="./images/first-page/photos/egg-salad.png"
+              alt="egg-salad"
+              class="hero-img"
+            />
           </div>
-          <img
-            src="./images/first-page/photos/egg-salad.jpg"
-            alt="egg-salad"
-            class="hero-img"
-          />
+          <aside class="hero-aside">01 - 02 03 04</aside>
         </div>
-      </section>
-     </section>
       </section>
       <section class="about">
         <div class="container">
@@ -50,6 +88,9 @@
                 odio nec aliquet eu proin mauris et.
               </p>
               <button type="button" class="about-item-btn">Know More</button>
+            </li>
+            <li class="about-item">
+              <img src="./images/first-page/icons/knife.jpg" alt="Knife" class="about-img">
             </li>
             <li class="about-item">
               <h2 class="about-item-title">Our History</h2>
@@ -65,36 +106,141 @@
       </section>
       <section class="table">
         <div class="container table-container">
-              <p class="table-subtitle">Reservations</p>
-              <h2 class="table-title">Book A Table</h2>
-              <form action="" class="table-form">
-                <select name="Person" id="Person" placeholder="1 Person" class="table-select">
-                </select>
-                <select name="Data" id="Data" placeholder="12/05/2024" class="table-select">
+          <p class="table-subtitle">Reservations</p>
+          <h2 class="table-title">Book A Table</h2>
+          <form action="" class="table-form">
+            <select id="Person" placeholder="1 Person" class="table-select">
+              <option class="table-select-person">1 Person</option>
+              <option class="table-select-person">2 Persons</option>
+              <option class="table-select-person">3 Persons</option>
+              <option class="table-select-person">4 Persons</option>
+              <option class="table-select-person">5 Persons</option>
+            </select>
 
-                </select>
-                <select name="Time" id="Time" placeholder="11:00 AM" class="table-select">
-                  
-                </select>
-              </form>
-              <button class="table-button">Book Now</button>
+            <select id="Date" placeholder="12/05/2024" class="table-select">
+              <option class="table-select-date">12/05/2021</option>
+              <option class="table-select-date">13/05/2021</option>
+              <option class="table-select-date">14/05/2021</option>
+              <option class="table-select-date">15/05/2021</option>
+              <option class="table-select-date">16/05/2021</option>
+              <option class="table-select-date">17/05/2021</option>
+              <option class="table-select-date">18/05/2021</option>
+              <option class="table-select-date">19/05/2021</option>
+              <option class="table-select-date">20/05/2021</option>
+              <option class="table-select-date">21/05/2021</option>
+            </select>
+
+            <select id="Time" placeholder="12/05/2024" class="table-select">
+              <option class="table-select-time">11:00 AM</option>
+              <option class="table-select-time">12:00 AM</option>
+              <option class="table-select-time">01:00 PM</option>
+              <option class="table-select-time">02:00 PM</option>
+              <option class="table-select-time">03:00 PM</option>
+              <option class="table-select-time">04:00 PM</option>
+              <option class="table-select-time">05:00 PM</option>
+              <option class="table-select-time">06:00 PM</option>
+              <option class="table-select-time">07:00 PM</option>
+              <option class="table-select-time">08:00 PM</option>
+              <option class="table-select-time">09:00 PM</option>
+              <option class="table-select-time">10:00 PM</option>
+            </select>
+          </form>
+          <button class="table-button">Book Now</button>
+        </div>
+      </section>
+      <section class="updates">
+        <div class="container">
+          <p class="updates-subtitle">Blogs</p>
+          <h2 class="updates-title">Gerícht Updates</h2>
+          <ul class="updates-list">
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/barbeque.jpg"
+                  alt="Nice photo of Barbeque Ribs"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">16 Apr 2021</p>
+                  <p class="updates-wrapper-text">- Annalisa L</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Tips For Prepping And Caring For Your Grill
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/gluhwein-drink.png"
+                  alt="Nice photo of Gluhvein Drink in our Bar"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">23 May 2021</p>
+                  <p class="updates-wrapper-text">-John Micheal</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Summer Cocktails And <br />
+                  Mocktails
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+            <li class="updates-list-item">
+              <article class="updates-article">
+                <img
+                  class="updates-aticle-img"
+                  src="./images/first-page/photos/meatballs.png"
+                  alt="Nice photo of meat balls in our cafe"
+                />
+                <div class="updates-wrapper">
+                  <p class="updates-wrapper-text">06 Aug 2021</p>
+                  <p class="updates-wrapper-text">-Fred W</p>
+                </div>
+                <h3 class="updates-article-title">
+                  Easy Cooking For College Students
+                </h3>
+                <p class="updates-article-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <a href="#" class="updates-article-link">Read More</a>
+              </article>
+            </li>
+          </ul>
+          <button class="updates-button">View More</button>
         </div>
       </section>
       <section class="menu">
         <div class="container">
           <ul class="menu-list">
             <li class="menu-item">
-              <a href="bar.html" class="menu-item-link"> Bar Menu </a>
+              <a href="bar.html" class="menu-link"> Bar Menu </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link"> Food Menu </a>
+              <a href="#" class="menu-link"> Food Menu </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link"> Desserts Menu </a>
+              <a href="#" class="menu-link"> Desserts Menu </a>
             </li>
           </ul>
         </div>
       </section>
+    </main>
+    <footer class="footer">
       <section class="newsletter">
         <div class="newsletter-container">
           <p class="newsletter-subtitle">Newsletter</p>
@@ -110,6 +256,7 @@
           </form>
         </div>
       </section>
+
       <section class="offers">
         <div class="container offers-container">
             <p class="offers-subtitle">Menu that fits you palatte</p>
@@ -211,11 +358,12 @@
     </section>
     </main>
     <footer class="footer">
+
       <div class="container footer-container">
         <div class="footer-box">
           <div class="footer-wrapper">
             <adress class="footer-adress">
-              <ul class="footer-adress-list">
+              <ul class="footer-`adress-list">
                 <li class="footer-adress-item">
                   <h3 class="footer-adress-item-title">Contact Us</h3>
                 </li>
@@ -243,7 +391,7 @@
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/facebook-icon.jpg"
+                      src="./images/first-page/icons/facebook-icon.png"
                       alt="Facebook"
                   /></a>
                 </li>
@@ -251,7 +399,7 @@
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/twitter-icon.jpg"
+                      src="./images/first-page/icons/twitter-icon.png"
                       alt="Twitter"
                   /></a>
                 </li>
@@ -259,7 +407,7 @@
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/insta-icon-beige.jpg"
+                      src="./images/first-page/icons/insta-icon-beige.png"
                       alt="Instagram"
                   /></a>
                 </li>

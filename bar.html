@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bar</title>
+    <title>Bar</title>
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/bar.css" rel="stylesheet" />
     <link
@@ -17,38 +17,93 @@
     <link href="https://fonts.cdnfonts.com/css/bestermind" rel="stylesheet" />
   </head>
   <body>
+    <header class="header">
+      <div class="container header-container">
+          <a href="index.html" class="header-logo">
+              <p class="header-text">Gericht</p>
+          </a>
+          <ul class="header-list">
+              <li class="header-item">
+                  <a href="index.html" class="header-link">Home</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link"> Pages</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link"> Contact Us</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link">Blog</a>
+              </li>
+              <li class="header-item">
+                  <a href="" class="header-link">Landing</a>
+              </li>
+          </ul>
+          <ul class="header-roster"> 
+              <li class="header-element">
+                <a href="" class="header-reference">Login in / Registration</a>
+              </li>
+              <li class="header-element">
+                <a href="" class="header-reference">Book Table</a>
+              </li>
+          </ul>
+      </div>
+  </header>
     <main>
-      <section class="table">
-        <div class="container table-container">
-          <p class="table-subtitle">Reservations</p>
-          <h2 class="table-title">Book A Table</h2>
-          <form action="" class="table-form">
-            <select
-              name="Person"
-              id="Person"
-              placeholder="1 Person"
-              class="table-select"
-            ></select>
-            <select
-              name="Data"
-              id="Data"
-              placeholder="12/05/2024"
-              class="table-select"
-            ></select>
-            <select
-              name="Time"
-              id="Time"
-              placeholder="11:00 AM"
-              class="table-select"
-            ></select>
-          </form>
-          <button class="table-button">Book Now</button>
-        </div>
-      </section>
       <section class="hero">
         <div class="container hero-container">
+          <div class="hero-hashtag-wrapper">
+            <p class="hero-hashtag">#Bar</p>
+            <p class="hero-hashtag">#Gericht</p>
+          </div>
           <h1 class="hero-title">On the Rocks</h1>
+            <aside class="hero-aside">01 - 02 03 04</aside>
         </div>
+      <section class="table">
+        <div class="container table-container">
+            <p class="table-subtitle">Reservations</p>
+            <h2 class="table-title">Book A Table</h2>
+            <form action="" class="table-form">
+              <select id="Person" placeholder="1 Person" class="table-select">
+                <option class="table-select-person">1 Person</option>
+                <option class="table-select-person">2 Persons</option>
+                <option class="table-select-person">3 Persons</option>
+                <option class="table-select-person">4 Persons</option>
+                <option class="table-select-person">5 Persons</option>
+              </select>
+
+              <select id="Date" placeholder="12/05/2024" class="table-select">
+                <option class="table-select-date">12/05/2021</option>
+                <option class="table-select-date">13/05/2021</option>
+                <option class="table-select-date">14/05/2021</option>
+                <option class="table-select-date">15/05/2021</option>
+                <option class="table-select-date">16/05/2021</option>
+                <option class="table-select-date">17/05/2021</option>
+                <option class="table-select-date">18/05/2021</option>
+                <option class="table-select-date">19/05/2021</option>
+                <option class="table-select-date">20/05/2021</option>
+                <option class="table-select-date">21/05/2021</option>
+              </select>
+
+              <select id="Time" placeholder="12/05/2024" class="table-select">
+                <option class="table-select-time">11:00 AM</option>
+                <option class="table-select-time">12:00 AM</option>
+                <option class="table-select-time">01:00 PM</option>
+                <option class="table-select-time">02:00 PM</option>
+                <option class="table-select-time">03:00 PM</option>
+                <option class="table-select-time">04:00 PM</option>
+                <option class="table-select-time">05:00 PM</option>
+                <option class="table-select-time">06:00 PM</option>
+                <option class="table-select-time">07:00 PM</option>
+                <option class="table-select-time">08:00 PM</option>
+                <option class="table-select-time">09:00 PM</option>
+                <option class="table-select-time">10:00 PM</option>
+              </select>
+
+
+            </form>
+            <button class="table-button">Book Now</button>
+          </div>
       </section>
       <section class="about">
         <div class="container about-container">
@@ -61,7 +116,7 @@
             <img
               src="./images/second-page/photos/cognac.jpg"
               alt="cognac"
-              class="about-wrapper-img"
+              class="about-top-img"
             />
             <p class="about-subtitle">About Us</p>
             <h2 class="about-title">Food, Drinks, entertainment in one</h2>
@@ -94,7 +149,7 @@
       <section class="hours">
         <div class="container">
           <h2 class="hours-title">
-            Happy <span class="hours-title-span">Hours</span>
+            Happy Hours
           </h2>
           <p class="hours-desc">Monday - Friday (4:00 Pm - 7:00 pm)</p>
         </div>
@@ -107,11 +162,8 @@
             <p class="find-desc">
               Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
             </p>
+            <h3 class="find-list-title">Opening Hours</h3>
             <ul class="find-list">
-              <li class="find-item">
-                <h3 class="find-item-title">Opening Hours</h3>
-              </li>
-              <li class="find-item">
                 <p class="find-item-desc">Mon - Fri: 10:00 am - 02:00 am</p>
               </li>
               <li class="find-item">
@@ -148,7 +200,7 @@
         <div class="footer-box">
           <div class="footer-wrapper">
             <adress class="footer-adress">
-              <ul class="footer-adress-list">
+              <ul class="footer-`adress-list">
                 <li class="footer-adress-item">
                   <h3 class="footer-adress-item-title">Contact Us</h3>
                 </li>
@@ -176,7 +228,7 @@
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/facebook-icon.jpg"
+                      src="./images/first-page/icons/facebook-icon.png"
                       alt="Facebook"
                   /></a>
                 </li>
@@ -184,7 +236,7 @@
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/twitter-icon.jpg"
+                      src="./images/first-page/icons/twitter-icon.png"
                       alt="Twitter"
                   /></a>
                 </li>
@@ -192,7 +244,7 @@
                   <a class="footer-sm-list-link" href="#"
                     ><img
                       class="footer-sm-list-img"
-                      src="./images/first-page/icons/insta-icon-beige.jpg"
+                      src="./images/first-page/icons/insta-icon-beige.png"
                       alt="Instagram"
                   /></a>
                 </li>
